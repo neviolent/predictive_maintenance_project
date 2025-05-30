@@ -20,7 +20,7 @@ def clean_feature_names(df):
     return df.rename(columns=lambda x: x.replace('[', '').replace(']', '').replace('<', ''))
 
 def app():
-    st.header("📊 Анализ данных и модель")
+    st.header("Анализ данных и модель")
 
     # Загрузка данных
     uploaded_file = st.file_uploader("Загрузите CSV-файл", type="csv")
